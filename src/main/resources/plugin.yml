@@ -1,0 +1,9 @@
+name: chunk-loader
+version: '1.2.2'
+main: de.xaaronzz105.chunkLoader.Main
+api-version: '1.21'
+authors: [ xAaronZz105 ]
+description: load chunks by placing command blocks gained by crafting
+commands:
+  chunkloaders:
+    permission: chunkloaders.command
