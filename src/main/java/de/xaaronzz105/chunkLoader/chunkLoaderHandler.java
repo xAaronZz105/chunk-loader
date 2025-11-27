@@ -111,6 +111,7 @@ public class chunkLoaderHandler implements Listener {
     @EventHandler
     private static void onChunkLoaderRightClick(PlayerInteractEvent event) {
         if (!event.getAction().isRightClick()) return;
+        if (event.getClickedBlock() == null) return;
         if (event.getClickedBlock().getType() != Material.STRUCTURE_VOID) return;
         LoaderData loaderData = LoaderData.getLoaderByLocation(event.getClickedBlock().getLocation());
         //System.out.println("clicked chunk loader, Type: " + loaderData.loaderType().name());
